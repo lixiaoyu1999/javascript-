@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 9.	利用JavaScript完成如下功能：如果今天是星期六，那么1000天后是星期几
+        // 方法一
+
+        var arr = 1000;
+        var sum = arr % 7;
+        switch (sum) {
+            case 1:
+                console.log("周日");
+                break;
+            case 2:
+                console.log("周一");
+                break;
+            case 3:
+                console.log("周二");
+                break;
+            case 4:
+                console.log("周三");
+                break;
+            case 5:
+                console.log("周四");
+                break;
+            case 6:
+                console.log("周五");
+                break;
+        }
+        // 方法2
+        var day = 6;
+        var num = 1000;
+        console.log((num + day) % 7)
+    </script>
+</body>
+
+</html>

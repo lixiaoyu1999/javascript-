@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 68.	定义数组 var arr =[11,22,33,44,55]  要求：使用for循环将arr数组的中的元素全部倒叙打印到控制台 -->
+    <script>
+        var arr = [11, 22, 33, 44, 55]
+        for (var i = 0; i < arr.length / 2; i++) {
+            var temp = arr[i]
+            arr[i] = arr[arr.length - 1 - i];
+            arr[arr.length - 1 - i] = temp;
+        }
+        console.log(arr);
+    </script>
+</body>
+
+</html>

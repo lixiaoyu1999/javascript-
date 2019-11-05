@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 76.	已知数组{"周兴迟","刘一飞","赵本善","孙妍姿","王菲","陈怡迅"}.
+请查找出数组中是否有孙妍姿、汪菲。 
+如果有，请给出索引；
+如果没有给出-1。 -->
+    <script>
+        var result = null;
+        var arr = ["周兴迟", "刘一飞", "赵本善", "孙妍姿", "王菲", "陈怡迅"];
+        for (var i = 0; i < arr.length; i++) {
+            if (arr[i] == "孙妍姿" || arr[i] == '王菲') {
+                result = i;
+                console.log(result)
+            }
+          
+        }
+       if (result == null){
+        result = -1;
+        console.log(result)
+       }
+    </script>
+</body>
+
+</html>

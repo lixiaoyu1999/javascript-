@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 44.	键盘录入学生考试成绩，使用if语句判断成绩等级，并打印出来。
+  	90-100 优秀
+  	80-90 好
+  	70-80 良
+  	60-70 及格
+      60以下 不及格 -->
+    <script>
+        var scroe = prompt('');
+        if (scroe >= 0 && scroe <= 100) {
+            // 60以下 不及格
+            if (scroe < 60) {
+                console.log('不及格')
+            } 
+            // 60-70 及格
+            else if (scroe >= 60 && scroe < 70) {
+                console.log('及格')
+            } 
+            // 70-80 良
+            else if (scroe >= 70 && scroe < 80) {
+                console.log('良')
+            }
+            // 80-90 好
+            else if (scroe >= 80 && scroe < 90) {
+                console.log('好')
+            }
+            	// 90-100 优秀
+             else if (scroe >= 90 && scroe <= 100) {
+                console.log('优秀')
+            }
+        }
+    </script>
+
+</body>
+
+</html>
